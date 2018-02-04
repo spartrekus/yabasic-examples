@@ -1,0 +1,55 @@
+open window 640, 480, "A14"
+clear window
+clear screen
+
+maxx = 639
+maxy = 479
+midx = 640 / 2
+midy = 480 / 2
+
+sub dwindow(br,bg,bb, fr,fg,fb, x1, y1, x2, y2, title$)
+	color 0,0,0
+	fill rectangle x1, y1, x2, y2
+	color fr,fg,fb
+	fill rectangle x1+1, y1+1, x2-1, y2-1
+	color br,bg,bb
+	rectangle x1+1, y1+1, x2-1, y2-1
+	rectangle x1+1, y1+1, x2-1, y1+41
+	color 100,100,100
+	text midx+1, 21, title$, "12x24", "cc"
+	color 255,255,0
+	text midx, 20, title$, "12x24", "cc"
+end sub
+
+dwindow (255,255,255, 0,0,0, 0,0,maxx,maxy, "YABASIC - GRAFIK FUNGSI SINUS")
+
+color 255,80,0
+text midx, 60, "http://raspi.teknikelektrolinks.com", "7x13", "cc"
+new curve
+n=0
+color 0,255,0
+repeat
+	x = 3+n*0.4
+	y = midy+150*sin(n*pi/180)
+	line to x, y
+	n = n + 1
+until (x>=maxx-3)
+
+new curve
+n=0
+color 0,100,255
+repeat
+	x = 3+n*0.75
+	y = midy+100*sin(n*pi/180)
+	line to x, y
+	n = n + 1
+until (x>=maxx-3)
+
+color 0,50,255
+text midx, 450, "Tekan sembarang tombol untuk selesai...", "A14", "cc"
+
+inkey$
+close window
+
+
+
