@@ -1,0 +1,4 @@
+# name.yab
+# Simple program to show input and how to display it
+Input "What is your name? " name$
+Print "Hello ", name$," you are using a yabsic program!"
