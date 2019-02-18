@@ -1,0 +1,9 @@
+
+        print "Test"
+        input "Please enter a number: " a
+        if (a>=1 and a<=9) 
+           print "your input is between 1 and 9"
+
+         print "Bye" 
+
+
