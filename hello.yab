@@ -1,8 +1,7 @@
-open window 100,100
-open printer
-circle 50,50,40
-text 10,50,"Press any key to get a printout"
-clear screen
-inkey$
-close printer
-close window
+
+
+print "Hello World"
+
+print "Bye"
+
+
