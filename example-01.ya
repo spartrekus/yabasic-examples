@@ -1,0 +1,10 @@
+input "A number please: " a
+if (a<10) then
+  print "Your number is less than 10."
+endif
+
+REM  and now without endif 
+
+input "A number please: " a
+if (a<10) print "Your number is less than 10."
+          

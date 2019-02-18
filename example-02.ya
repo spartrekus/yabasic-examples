@@ -1,0 +1,26 @@
+print "Example 02"
+input "Please enter a number: " a
+if (a<0) then
+  print "less than 0"
+elseif (a<=10) then
+  print "between 0 and 10"
+elsif (a<=20)
+  print "between 11 and 20"
+else
+  print "over 20"
+endif
+
+input "Please enter another number: " b
+if (b<0) then
+  print "less than 0"
+else
+  if (b<=10) then
+    print "between 0 and 10"
+  else
+    if (b<=20) then
+      print "between 11 and 20"
+    else
+      print "over 20"
+    endif
+  endif
+endif
