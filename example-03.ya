@@ -1,0 +1,17 @@
+
+print "Please press any key to continue."
+print "(program will continue by itself within 10 seconds)"
+
+
+label done
+
+for a=1 to 10
+  print a 
+next a
+
+print "Hello World !"
+
+input "Press Enter" a 
+
+goto done 
+          
